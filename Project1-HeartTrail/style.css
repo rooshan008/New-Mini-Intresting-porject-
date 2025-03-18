@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    background-color: #000;
+    color: white;
+    position: relative;
+    overflow: hidden;
+}
+
+span{
+    background-image: url('https://cdn4.iconfinder.com/data/icons/love-334/32/heart_wings_love-1024.png');
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    background-size: cover;
+    height: 100px;
+    width: 100px;
+    cursor: pointer;
+    pointer-events: none;
+    animation: animate  6s linear;
+}
+
+@keyframes animate {
+    0%{
+        transform: translate(-50%, -50%);
+        opacity: 1;
+        filter: hue-rotate(0);
+     
+    }
+    100%{
+        transform: translate(-50%, 5000%);
+        opacity: 0;
+        filter: hue-rotate(720);
+    }
+}
+
